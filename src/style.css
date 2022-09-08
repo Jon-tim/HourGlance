@@ -44,6 +44,7 @@ nav ul {
 }
 
 nav ul li {
+  width: 100%;
   cursor: pointer;
   list-style: none;
   text-transform: capitalize;
@@ -55,10 +56,11 @@ nav ul li {
   position: relative;
 }
 
-nav ul li.active,
-nav ul li.active i {
+li.active,
+li.active i {
   color: var(--washed-blue);
 }
+
 nav ul li:hover::after,
 .active::after {
   content: "";
@@ -67,7 +69,6 @@ nav ul li:hover::after,
   height: 6px;
   border-radius: 50px;
   position: absolute;
-  top: 12px;
   left: -20px;
 }
 
