@@ -1,0 +1,29 @@
+
+progress {
+  /* RESETS */
+  border-radius: 50px;
+  width: 100%;
+  margin: 0.6rem 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: none;
+}
+
+/* WEBKIT BROWSERS - CHROME, OPERA AND SAFARI */
+progress::-webkit-progress-bar {
+  background-color: rgb(235, 235, 235);
+  border-radius: 50px;
+}
+
+progress::-webkit-progress-value {
+  background-color: var(--purple);
+  border-radius: 50px;
+}
+
+/* MOZILLA FIREFOX */
+progress::-moz-progress-bar {
+  background-color: var(--purple);
+  border-radius: 50px;
+}
+/* --------------------- */
