@@ -447,6 +447,7 @@ progress::-moz-progress-bar {
 }
 
 .test-skills {
+  width: 100%;
   padding: 1rem;
   border-radius: 6px;
   background-color: var(--washed-blue);
