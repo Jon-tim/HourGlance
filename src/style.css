@@ -234,7 +234,7 @@ nav ul li i,
 }
 
 .current-projects div:nth-child(1) p:nth-child(2) {
-  color: var(--washed-blue);
+  color: var(--light-washed-blue);
 }
 
 .figma-container {
@@ -380,10 +380,10 @@ progress::-moz-progress-bar {
 
 .side-content {
   width: 25%;
-  border: 1px solid red;
   padding: 2rem;
   display: flex;
   flex-direction: column;
+  gap: 1.3rem;
 }
 
 .profile {
@@ -426,7 +426,6 @@ progress::-moz-progress-bar {
 .profile-card img {
   width: 35px;
   height: 35px;
-  /* margin-right: .5rem; */
 }
 
 .profile-name p:nth-child(1) {
@@ -451,7 +450,6 @@ progress::-moz-progress-bar {
   padding: 1rem;
   border-radius: 6px;
   background-color: var(--washed-blue);
-  margin-top: 2rem;
   display: flex;
   gap: 1rem;
   flex-direction: column;
@@ -472,4 +470,84 @@ progress::-moz-progress-bar {
   font-family: inherit;
   width: 150px;
   height: 40px;
+  color: var(--washed-blue);
+}
+
+.top-jobs {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  gap: 0.5rem;
+}
+
+.top-jobs_header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.top-jobs_header p:nth-child(1) {
+  font-weight: bold;
+}
+
+.top-jobs_header p:nth-child(2) {
+  color: var(--light-washed-blue);
+  font-size: 0.8rem;
+}
+
+.job {
+  background-color: #fff;
+  border-radius: 6px;
+}
+.job-title {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid var(--text-color);
+  padding: 0.8rem;
+}
+.job-title div {
+  margin-left: 0.6rem;
+}
+
+.job-title div p:nth-child(1) {
+  font-weight: 500;
+}
+.job-title div p:nth-child(2) {
+  /* font-weight: 600; */
+  font-size: 0.8rem;
+}
+
+.job-details {
+  display: flex;
+  flex-direction: column;
+  padding: 0.8rem;
+}
+
+.job-details p {
+  font-size: 0.8rem;
+  color: #afafaf;
+  margin-bottom: 0.8rem;
+}
+
+.filters {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.filters div {
+  border-radius: 6px;
+  background-color: var(--grey);
+  width: max-content;
+  height: 25px;
+  padding-inline: 0.6rem;
+  display: grid;
+  place-items: center;
+}
+.filters div a {
+  text-decoration: none;
+  text-transform: capitalize;
+  font-size: 0.8rem;
+  color: var(--washed-blue);
 }
