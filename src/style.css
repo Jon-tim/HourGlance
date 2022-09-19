@@ -370,6 +370,12 @@ progress::-moz-progress-bar {
   background-color: var(--light-washed-blue);
 }
 
+.chart-container {
+  width: 100%;
+  height: 38vh;
+  position: relative;
+}
+
 /* ASIDE SECTION */
 
 .side-content {
