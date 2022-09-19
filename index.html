@@ -18,6 +18,7 @@
     />
     <!-- ------ -->
     <link rel="stylesheet" href="src/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <!-- Links -->
     <title>HourGlance | Dashboard</title>
   </head>
@@ -118,6 +119,9 @@
               </div>
             </div>
             <p><span>60</span> projects this month</p>
+            <div>
+              <canvas id="myChart"></canvas>
+            </div>
           </div>
         </div>
       </section>
@@ -165,9 +169,32 @@
             </div>
           </div>
         </div>
-        <div class="client-feedbacks"></div>
+        <div class="client-feedbacks">
+          <p>client's feedback</p>
+          <div class="feedback">
+            <div class="client">
+              <div class="img">
+                <img src="images/Ellipse 12.png" alt="client image" />
+                <div class="name">
+                  <p>Henry T.</p>
+                  <p>CEO, LaCrox Inc.</p>
+                </div>
+              </div>
+              <div class="rating">
+                <p>5/5 <i class="bx bxs-star"></i></p>
+              </div>
+            </div>
+            <p>
+              I am very happy with what name has done for me......EXCELLENT!!!
+            </p>
+            <p class="view-more">
+              view all <i class="bx bx-chevrons-down"></i>
+            </p>
+          </div>
+        </div>
       </aside>
     </main>
+    <script src="src/chart.js"></script>
     <script src="src/main.js"></script>
   </body>
 </html>

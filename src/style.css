@@ -18,10 +18,10 @@ html {
 }
 
 body {
-  background-color: #fafafa;
+  background-color: #f5f5f5;
 }
 main {
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   display: flex;
   /* gap: 2rem; */
@@ -113,13 +113,13 @@ nav ul li i,
 /* MAIN-CONTENT */
 
 .main-content {
-  margin-top: 2rem;
-  padding-left: 2rem;
+  margin-top: 1.5rem;
+  padding-left: 1.5rem;
   width: 60%;
 }
 
 .search-bar {
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
   padding-left: 0.5rem;
   display: flex;
   gap: 0.5rem;
@@ -151,12 +151,6 @@ nav ul li i,
   grid-template-rows: 90px 90px auto;
   gap: 1rem;
 }
-
-/* .top-details {
-  display: flex;
-  align-items: center;
-  gap: 1.5rem;
-} */
 
 .earnings {
   grid-row: span 2;
@@ -380,10 +374,11 @@ progress::-moz-progress-bar {
 
 .side-content {
   width: 25%;
-  padding: 2rem;
+  padding: 1.5rem;
   display: flex;
   flex-direction: column;
   gap: 1.3rem;
+  overflow: auto;
 }
 
 .profile {
@@ -462,14 +457,18 @@ progress::-moz-progress-bar {
   font-weight: bold;
 }
 
+.test-skills img {
+  width: 80px;
+}
+
 .test-skills button {
   border-radius: 6px;
   border: none;
   background-color: #fff;
   text-transform: capitalize;
   font-family: inherit;
-  width: 150px;
-  height: 40px;
+  width: 120px;
+  height: 35px;
   color: var(--washed-blue);
 }
 
@@ -550,4 +549,69 @@ progress::-moz-progress-bar {
   text-transform: capitalize;
   font-size: 0.8rem;
   color: var(--washed-blue);
+}
+
+/* .client-feedbacks {
+} */
+
+.client-feedbacks > p:nth-child(1) {
+  /* color: red; */
+  text-transform: capitalize;
+  margin-bottom: 0.5rem;
+}
+
+.feedback {
+  padding: 0.8rem;
+  background-color: #fff;
+  border-radius: 6px;
+}
+.feedback > p:nth-child(2) {
+  color: #afafaf;
+  font-size: 0.8rem;
+}
+
+.feedback > p:nth-child(3) {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  color: var(--washed-blue);
+}
+
+.feedback > p:nth-child(3) i {
+  color: var(--washed-blue);
+}
+
+.client,
+.img {
+  display: flex;
+  align-items: center;
+}
+
+.client {
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+
+.img img {
+  width: 30px;
+  margin-right: 0.5rem;
+}
+.name p:nth-child(1) {
+  font-weight: 500;
+  font-size: 1rem;
+}
+.name p:nth-child(2) {
+  font-size: 0.8rem;
+}
+
+.rating {
+  font-size: 0.8rem;
+}
+.rating p i {
+  color: #f9d546;
+}
+
+.view-more {
+  margin: 0 auto;
+  width: max-content;
 }
